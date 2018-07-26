@@ -6,6 +6,7 @@
 
     <dimen name="fab_press_translation_z">6dp</dimen>
 
+    <dimen name="default_and_half_padding">12dp</dimen>
     <dimen name="default_padding">8dp</dimen>
     <dimen name="half_padding">4dp</dimen>
 
