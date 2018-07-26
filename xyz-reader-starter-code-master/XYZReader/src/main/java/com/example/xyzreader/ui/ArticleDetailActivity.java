@@ -49,12 +49,6 @@ public class ArticleDetailActivity extends AppCompatActivity
         }
         */
         setContentView(R.layout.activity_article_detail);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        //this throwing a null pointer we use AppCompatActivity which means we need to call supportActionBar
-        //our theme inherits from a appcompat theme and the manifest is correct
-        if (getSupportActionBar() != null)
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         getLoaderManager().initLoader(0, null, this);
 
@@ -149,7 +143,7 @@ public class ArticleDetailActivity extends AppCompatActivity
         @Override
         public void setPrimaryItem(ViewGroup container, int position, Object object) {
             super.setPrimaryItem(container, position, object);
-            
+
         }
 
         @Override
